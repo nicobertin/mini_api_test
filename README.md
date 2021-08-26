@@ -72,5 +72,9 @@ La aplicación esta incompleta. Se comenzó a desarrollar siguiendo la metodolog
 rails t
 ```
 
-### Problemas
-Si encuentras un error en el codigo o algo te parece que esta mal, reportalo.
+## Fin
+Cuando estes listo envia el link de tu repo a [mario@clyc.me](mailto:mario@clyc.me)
+
+***
+
+> Dado un número suficientemente elevado de ojos, todos los errores se vuelven obvios. Ley de Linus.
