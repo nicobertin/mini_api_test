@@ -58,13 +58,18 @@ rails s
 ```
 
 ## To Do
+
 La aplicación esta incompleta. Se comenzó a desarrollar siguiendo la metodología de "Test-driven development" así que las pruebas están disponibles pero no así las implementaciones. Entonces los objetivos son:
 
 - Completar la implementación de los metodos que faltan en los controladores siguiendo los comentarios que hay en cada uno de estos. (Index, Show y Update para causes; Index, Create y Destroy para donations)
 
 - Se cree que el Index de causas esta generando muchas consultas a la bbdd por lo que se pide optimizarlo (Ayuda: El proyecto incluye la gema "Bullet").
 
-- Hay un nuevo requerimiento. Se necesita un nuevo endpoint para obtener estadísticas de la plataforma. En el landing page están esperando mostrar el numero total de causas que hay en la plataforma, el numero total de causas que han superado en donaciones al monto esperado y el monto total recaudado en donaciones en la plataforma. Para cumplir con este requerimiento no hay reglas, pero si se esperan buenas practicas.
+### Hay dos nuevos requerimientos:
+
+- Se necesita un nuevo endpoint para obtener estadísticas de la plataforma. En el landing page están esperando: 1. Mostrar el numero total de causas que hay en la plataforma. 2. El numero total de causas que han superado en donaciones al monto esperado. 3. El monto total recaudado en donaciones en la plataforma. Para cumplir con este requerimiento no hay reglas, pero si se esperan buenas practicas.
+
+- Actualmente el Index de causas que tuviste que optimizar retorna muchas causas y se necesita ocupar de igual forma para mostrar causas destacadas en el landing. Por lo que se espera que se cree un nuevo campo propio de las causas, que permita seleccionar cuales serán las causas que aparecerán en el landing ( Utilizando el metodo Update para dejarlas en el landing o no ) y agregar el filtro necesario al Index para obtenerlas.
 
 ### Para correr las pruebas
 
