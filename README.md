@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="htts://clyc.me">
+    <img src="https://clycme-images.s3.us-east-2.amazonaws.com/clycme+logos/v1/clycme_primary.png" alt="Logo" width="300" >
+  </a>
+</p>
+
 # MINI API REST
 
 Prueba de conocimientos sobre RoR.
@@ -62,4 +68,4 @@ La aplicación esta incompleta. Se comenzó a desarrollar siguiendo la metodolog
 
 
 ### Problemas
-Si encuentras un error en el codigo o algo te parece que esta mal reportalo.
+Si encuentras un error en el codigo o algo te parece que esta mal, reportalo.
