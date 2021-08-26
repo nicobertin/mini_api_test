@@ -14,12 +14,43 @@
         email: Faker::Internet.email,
         organization: org
     )
-    (0..3).each do |c|
+    (0..8).each do |c|
         Cause.create(
             title: Faker::Lorem.sentence,
             description: Faker::Lorem.paragraphs,
-            expected_amount: 1000000,
+            expected_amount: rand(10000000),
             organization: org
         )
     end
 end
+causes_count = Cause.all.count
+(0..100).each do |r|
+    Report.create(
+        title: Faker::Lorem.sentence,
+        description: Faker::Lorem.paragraphs,
+        quantity: rand(1000000),
+        cause_id: rand(causes_count)
+    )
+end
+
+(0..100).each do |r|
+    Donation.create(
+        media: "webpay",
+        quantity: rand(1000000),
+        cause_id: rand(causes_count)
+    )
+end
+
+cf = Cause.first
+Donation.create(
+    media: "transfer",
+    quantity: cf.expected_amount + 1,
+    cause: cf
+)
+
+cl = Cause.last
+Donation.create(
+    media: "transfer",
+    quantity: cl.expected_amount + 1,
+    cause: cl
+)

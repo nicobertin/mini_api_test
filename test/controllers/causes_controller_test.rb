@@ -3,7 +3,7 @@ require "test_helper"
 class CausesControllerTest < ActionDispatch::IntegrationTest
 
     test "index" do
-        get "/causes?organization=" + organizations(:one).id.to_s
+        get "/causes"
         assert_response :success
         assert_equal "application/json", @response.media_type
     end

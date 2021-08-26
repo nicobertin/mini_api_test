@@ -3,7 +3,6 @@ class CausesController < ApplicationController
     before_action :set_cause, only: %i[show update]
 
     def index
-        ## TODO: Implement filter by organization's name. The expected param is: params[:organization]
         causes = Cause.all
         render json: causes.to_json(include: [:organization]), status: 200
     end
