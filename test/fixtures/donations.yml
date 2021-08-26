@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+cause_one_one:
+    media: webpay
+    quantity: 10000
+    cause: one
+
+cause_one_two:
+    media: transfer
+    quantity: 130000
+    cause: one
+
+cause_one_three:
+    media: webpay
+    quantity: 120000
+    cause: one
+
+cause_six_one:
+    media: webpay
+    quantity: 1240000
+    cause: six
+
+cause_six_two:
+    media: transfer
+    quantity: 130000
+    cause: six
+
+cause_six_three:
+    media: webpay
+    quantity: 120000
+    cause: six
