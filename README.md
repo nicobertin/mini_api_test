@@ -66,6 +66,11 @@ La aplicación esta incompleta. Se comenzó a desarrollar siguiendo la metodolog
 
 - Hay un nuevo requerimiento. Se necesita un nuevo endpoint para obtener estadísticas de la plataforma. En el landing page están esperando mostrar el numero total de causas que hay en la plataforma, el numero total de causas que han superado en donaciones al monto esperado y el monto total recaudado en donaciones en la plataforma. Para cumplir con este requerimiento no hay reglas, pero si se esperan buenas practicas.
 
+### Para correr las pruebas
+
+```shell
+rails t
+```
 
 ### Problemas
 Si encuentras un error en el codigo o algo te parece que esta mal, reportalo.
