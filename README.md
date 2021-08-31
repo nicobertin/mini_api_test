@@ -40,7 +40,7 @@ Crea la base de datos:
 ```shell
 rails db:create
 ```
-Corre las migraciones:
+Carga el esquema:
 
 ```shell
 rails db:schema:load

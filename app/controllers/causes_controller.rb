@@ -13,7 +13,7 @@ class CausesController < ApplicationController
     end
 
     def update
-        ## TODO: Update a cause params
+        ## TODO: Update a cause attributes
         render json: {}, status: 201
     end
 
