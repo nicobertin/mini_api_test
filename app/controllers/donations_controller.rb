@@ -17,7 +17,7 @@ class DonationsController < ApplicationController
 
     private
     # Only allow a list of trusted parameters through.
-    def cause_params
+    def donation_params
         params.fetch(:donation, {}).permit(:media, :quantity)
     end
 end
