@@ -19,7 +19,7 @@ class CausesControllerTest < ActionDispatch::IntegrationTest
 
     test "update" do
         @cause = causes(:two)
-        get "/causes/" + @cause.id.to_s, params:{
+        patch "/causes/" + @cause.id.to_s, params:{
             cause:{
                 title: "Updated",
                 description: "Description Updated",
