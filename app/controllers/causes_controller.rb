@@ -4,7 +4,7 @@ class CausesController < ApplicationController
 
     def index
         causes = Cause.all
-        render json: causes.to_json(include: [:organization]), status: 200
+        render json: causes, status: 200
     end
 
     def show
