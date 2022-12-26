@@ -9,12 +9,16 @@ class CausesController < ApplicationController
 
     def show
         ## TODO: Return a complete cause including organization, reports and donations
-        render json: {}, status: 200
+        render json: @cause.to_json(include: [:organization, :reports, :donations]), status: 200
     end
 
     def update
         ## TODO: Update a cause attributes
-        render json: {}, status: 201
+        if @cause.update(cause_params)
+            render json: @cause, status: :ok
+        else
+            render json: @cause.errors, status: :unprocessable_entity
+        end
     end
 
     private
