@@ -29,6 +29,6 @@ class CausesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def cause_params
-        params.fetch(:cause, {}).permit(:title, :description, :expected_amount )
+        params.fetch(:cause, {}).permit(:title, :description, :expected_amount, :highlight )
     end
 end
