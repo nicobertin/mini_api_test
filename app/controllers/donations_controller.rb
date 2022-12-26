@@ -2,8 +2,8 @@ class DonationsController < ApplicationController
 
     def index
         ## TODO: Return a list of donations filtering by cause
-        donations = Donation.all.where(cause_id: params[:cause_id])
-        render json: donations, status: 200
+        filtered_donations = Donation.select { |donation| donation.cause_id == params[:cause_id].to_i }
+        render json: filtered_donations, status: 200
     end
 
     def create
