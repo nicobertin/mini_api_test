@@ -2,7 +2,15 @@ class DonationsController < ApplicationController
 
     def index
         ## TODO: Return a list of donations filtering by cause
-        filtered_donations = Donation.select { |donation| donation.cause_id == params[:cause_id].to_i }
+
+        ## By ID
+        # Example http://127.0.0.1:3000/donations?cause_id=1
+        # filtered_donations = Donation.select { |donation| donation.cause_id == params[:cause_id] }
+        # render json: filtered_donations, status: 200
+
+        # By TITLE
+        # Example http://127.0.0.1:3000/donations?cause=Nihil+quo+eveniet+nesciunt.
+        filtered_donations = Donation.select { |donation| donation.cause.title == params[:cause] }
         render json: filtered_donations, status: 200
     end
 
